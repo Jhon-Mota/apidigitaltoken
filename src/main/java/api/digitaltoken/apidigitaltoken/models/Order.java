@@ -1,6 +1,5 @@
 package api.digitaltoken.apidigitaltoken.models;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -30,9 +29,6 @@ public class Order {
     @Column(nullable = false, precision = 3, scale = 2)
     private int quantity;
 
-    @Column(nullable = false, precision = 3, scale = 2)
-    private BigDecimal price;
-
-    @Column(nullable = false)
-    private String paymentMethod;
+    @Column(nullable = false, precision = 3)
+    private float price;
 }
