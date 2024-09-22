@@ -14,4 +14,6 @@ public interface OrderRepository extends JpaRepository<Order, UUID>{
 
     public List<Order> findByItem(String item);
     
+    public void deleteByItem(String item);
+
 }
